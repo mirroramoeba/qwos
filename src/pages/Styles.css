@@ -1,0 +1,84 @@
+.box{
+/* background */
+  position: absolute;
+  width: 566px;
+  height: 624px;
+  left: calc(50% - 566px/2);
+  top: calc(50% - 624px/2);
+
+  background: #E0E0E0;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.boxReg{
+ 
+  position: absolute;
+  height: 77px;
+  width: 284px;
+  left: 280px;
+  bottom: 545px;
+
+  background: #C4C4C4;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px 10px 0px 0px;
+}
+
+.boxLog{
+  position: absolute;
+  height: 77px;
+  width: 284px;
+  right: 280px;
+  bottom: 545px;
+
+  background: #C4C4C4;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px 0px 0px 0px;
+}
+
+.inputField{
+  position: absolute;
+  background: #FFFFFF;
+  /* Gray 1 */
+  
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.text{
+  position: absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.textButton{
+  position:absolute;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.enterButton{
+  position: absolute;
+
+  background: #000000;
+  border-radius: 10px;
+}
