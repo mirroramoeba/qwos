@@ -1,14 +1,15 @@
 import './App.css';
 import "./pages/Styles.css"
-import LoginPage from "./pages/LoginPage"
-import RegPage from "./pages/RegPage"
+import LoginPage from "./pages/LoginPage/LoginPage"
+import RegPage from "./pages/RegPage/RegPage"
 import { BrowserRouter as Router, Route, Link, Outlet } from "react-router-dom";
 
-export default function App() {
-  return (
+const App = () => [
+
     <div className='App'>
-      <LoginPage/>
       <Outlet />
     </div>
-  );
-}
+
+]
+
+export default App;

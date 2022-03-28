@@ -9,8 +9,8 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import LoginPage from "./pages/LoginPage"
-import RegPage from "./pages/RegPage"
+import LoginPage from "./pages/LoginPage/LoginPage"
+import RegPage from "./pages/RegPage/RegPage"
 
 
 const rootElement = document.getElementById("root");
