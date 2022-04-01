@@ -1,26 +1,5 @@
 import styled, {css} from "styled-components";
-import { Link } from "react-router-dom";
 
-function showHidePassword(target){
-	var input = document.getElementById('password-input');
-	if (input.getAttribute('type') === 'password') {
-		target.classList.add('view');
-		input.setAttribute('type', 'text');
-	} else {
-		target.classList.remove('view');
-		input.setAttribute('type', 'password');
-	}
-	return false;
-}
-
-const Container = styled.div`
-  
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  pading: 20%;
-
-`
 
 const MainBox = styled.div`
   display: inline-flex;
@@ -115,6 +94,7 @@ const Input = styled.input`
   border: 1px solid #333333;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 `
 
 const EnterButton = styled.div`
@@ -123,10 +103,13 @@ const EnterButton = styled.div`
   align-items: center;
   height: 55%;
   width: 100%;
+  border:none;
+  &:hover{
+    cursor: pointer;
+  }
 
   background: #000000;
   border-radius: 10px;
 `
-
-export {BoxReg, ButtonBox, TextBox, Content, InputBox, InputField, Input, EnterButton, Container};
+export {BoxReg, ButtonBox, TextBox, Content, InputBox, InputField, Input, EnterButton};
 export default MainBox;

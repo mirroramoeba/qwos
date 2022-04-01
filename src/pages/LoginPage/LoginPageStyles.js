@@ -1,31 +1,9 @@
 import styled, {css} from "styled-components";
-import { Link } from "react-router-dom";
-
-function showHidePassword(target){
-	var input = document.getElementById('password-input');
-	if (input.getAttribute('type') === 'password') {
-		target.classList.add('view');
-		input.setAttribute('type', 'text');
-	} else {
-		target.classList.remove('view');
-		input.setAttribute('type', 'password');
-	}
-	return false;
-}
-
-const Container = styled.div`
-  
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  pading: 20%;
-
-`
 
 const MainBox = styled.div`
   display: inline-flex;
   flex-direction: column;
-  width: 50vmin; 
+  width: 50vmin;
   height: 60vmin;
   
   position: absolute;
@@ -63,8 +41,15 @@ const Content = styled.div`
   ${props => props.primary && css`
     color: white;
   `}
+  ${props => props.primary1 && css`
+    letter-spacing: 1px;
+    font-size:80%;
+    color: rgb(90, 90, 90);
+    &:hover{
+      cursor: pointer;
+    }
+  `}
 `
-
 const BoxReg = styled.div`
   display: inline-flex;
   justify-content: center;
@@ -83,7 +68,6 @@ const BoxReg = styled.div`
     transition: .2s;
   }
 `
-
 const InputBox = styled.div`
   display: flex;
   height: 92vh;
@@ -91,7 +75,6 @@ const InputBox = styled.div`
   justify-content: space-around;
   align-items: center;
 `
-
 const InputField = styled.div`
   display: inline-flex;
   flex-direction: column;
@@ -103,7 +86,6 @@ const InputField = styled.div`
 
 const Input = styled.input`
   background: #FFFFFF;
-
   
   height:55%;
 
@@ -115,18 +97,29 @@ const Input = styled.input`
   border: 1px solid #333333;
   box-sizing: border-box;
   border-radius: 10px;
+  outline: none;
 `
-
 const EnterButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 55%;
   width: 100%;
+  border:none;
+  &:hover{
+    cursor: pointer;
+  }
 
   background: #000000;
   border-radius: 10px;
 `
-
-export {BoxReg, ButtonBox, TextBox, Content, InputBox, InputField, Input, EnterButton, Container};
+const PasswordControl = styled.button`
+  display: inline-flex;
+  justify-content: left;
+  height:0%;
+  width: 57%;
+  border: 0;
+  background: transparent;
+`
+export {BoxReg, ButtonBox, TextBox, Content, InputBox, InputField, Input, EnterButton, PasswordControl};
 export default MainBox;

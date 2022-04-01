@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from "react-dom";
-import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -11,6 +10,7 @@ import {
 } from "react-router-dom";
 import LoginPage from "./pages/LoginPage/LoginPage"
 import RegPage from "./pages/RegPage/RegPage"
+import MainPage from "./pages/MainPage/MainPage"
 
 
 const rootElement = document.getElementById("root");
@@ -20,6 +20,7 @@ render(
       <Route path="/" element={<App />}>
       <Route path="login" element={<LoginPage />} />
       <Route path="registration" element={<RegPage />}/>
+      <Route path="main" element={<MainPage />}/>
       <Route
         path="*"
         element={
