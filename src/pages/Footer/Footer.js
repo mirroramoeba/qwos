@@ -8,8 +8,19 @@ import FooterBox, {
   HelpPart,
   Country,
   Social,
-  FooterUnderText
+  FooterUnderText,
+  Text,
+  Flag,
+  Icon
 } from "./FooterStyles";
+
+import Rus from "../../img/SVG/rus.svg"
+import TT from "../../img/SVG/TikTok.svg"
+import Inst from "../../img/SVG/Instagram.svg"
+import YouTube from "../../img/SVG/YouTube.svg"
+import Pinterest from "../../img/SVG/Pinterest.svg"
+import Mail from "../../img/SVG/mail.svg"
+
 
 class Footer extends Component {
   render() {
@@ -20,45 +31,47 @@ class Footer extends Component {
             <ContentBlockTitle>Помощь</ContentBlockTitle>
             <Help>
               <HelpPart>
-                <Link to="/main">Как оформить заказ</Link>
-                <Link to="/main">Мои Заказы</Link>
-                <Link to="/main">Условия доставки</Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Как оформить заказ</Text></Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Мои Заказы</Text></Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Условия доставки</Text></Link>
               </HelpPart>
-              <HelpPart>
-                <Link to="/main">Возврат</Link>
-                <Link to="/main">Публичная Оферта</Link>
-                <Link to="/main">Часто задаваемые вопросы</Link>
+              <HelpPart right = 'right'>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Возврат</Text></Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Публичная Оферта</Text></Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>Часто задаваемые вопросы</Text></Link>
               </HelpPart>
             </Help>
             <Country>
-              <div>БСК</div>
+              <Flag src={Rus}></Flag>
               <div>Россия</div>
-              <Link to="/main">Сменить Страну</Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Text>Сменить Страну</Text></Link>
             </Country>
             <Social>
-              <Link to="/main">ТТ</Link>
-              <Link to="/main">Inst</Link>
-              <Link to="/main">VK</Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Icon src={TT}></Icon></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Icon src={Inst}></Icon></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Icon src={YouTube}></Icon></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Icon src={Pinterest}></Icon></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Icon src={Mail}></Icon></Link>
             </Social>
           </ContentBlock>
           <ContentBlock>
             <ContentBlockTitle>Для мобильных устройств</ContentBlockTitle>
             <Help>
               <HelpPart>
-                <Link to="/main">AppStore</Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>AppStore</Text></Link>
               </HelpPart>
               <HelpPart>
-                <Link to="/main">GooglePlay</Link>
+                <Link to="/main" style={{textDecoration: "none"}}><Text>GooglePlay</Text></Link>
               </HelpPart>
             </Help>
-            <Link to="/main">
-              Вы также можете перейти на мобильную версию сайта
+            <Link to="/main" style={{textDecoration: "none"}}>
+            <Text>Вы также можете перейти на мобильную версию сайта</Text>
             </Link>
             <Country>
-              <Link to="/main">MИP</Link>
-              <Link to="/main">Master</Link>
-              <Link to="/main">Visa</Link>
-              <Link to="/main">PayPal</Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Text>MИP</Text></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Text>Master</Text></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Text>Visa</Text></Link>
+              <Link to="/main" style={{textDecoration: "none"}}><Text>PayPal</Text></Link>
             </Country>
           </ContentBlock>
         </FooterInfoBlock>

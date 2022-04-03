@@ -9,7 +9,26 @@ class MainPage extends Component {
     return (
       <div>
         <Header />
-        <Content>К В О С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
+        <Content>К В А С</Content>
         <Footer />
       </div>
     );

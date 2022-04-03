@@ -16,6 +16,7 @@ const Logo = styled.img`
   justify-content: space-evenly;
   width: 10rem;
   height: 3rem;
+ 
 `;
 const Navigation = styled.div`
   display: flex;
