@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 
+
 const HeaderBox = styled.div`
   display: inline-flex;
   width: 100vw;
@@ -9,18 +10,12 @@ const HeaderBox = styled.div`
   justify-content: space-evenly;
 `;
 
-const Logo = styled.div`
-  text-align: center;
-  align-items: center;
+const Logo = styled.img`
+  display:flex;
+  align-items:center;
+  justify-content: space-evenly;
   width: 10rem;
-  height: 3.5rem;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  color: #dadada;
+  height: 3rem;
 `;
 const Navigation = styled.div`
   display: flex;
@@ -38,7 +33,7 @@ const NavigationButton = styled.div`
   width: 10rem;
   height: 3.5rem;
   text-decoration: none;
-  background: #1b1b1b;
+  background: #1B1B1B;
   transform: skew(-15deg);
   transition: 0.2s;
 
@@ -54,24 +49,10 @@ const NavigationButton = styled.div`
   color: #dadada;
 
   :hover {
-    background: #00fa9a;
-    color: black;
+    background: #81B1A6;
     transition: 0.2s;
     cursor: pointer;
   }
-`;
-const Content = styled.div`
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  transform: skew(15deg);
-  letter-spacing: 1.5px;
-
-  color: #dadada;
 `;
 const AccountArea = styled.div`
   display: flex;
@@ -105,8 +86,14 @@ const TrashButton = styled.div`
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.5px;
+  transition: 0.2s;
 
   color: #dadada;
+  :hover {
+    font-size: 18px;
+    transition: 0.2s;
+    cursor: pointer;
+  }
 `;
 
 export default HeaderBox;
@@ -114,7 +101,6 @@ export {
   Logo,
   Navigation,
   NavigationButton,
-  Content,
   AccountArea,
   AccountButton,
   FavoriteButton,

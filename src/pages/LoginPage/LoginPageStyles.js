@@ -116,6 +116,7 @@ const EnterButton = styled.div`
   border: none;
   &:hover {
     cursor: pointer;
+    background: #595959;
   }
 
   background: #000000;

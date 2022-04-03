@@ -101,7 +101,7 @@ const Input = styled.input`
   outline: none;
 `;
 
-const EnterButton = styled.input`
+const EnterButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;

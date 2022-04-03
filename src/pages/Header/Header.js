@@ -4,20 +4,22 @@ import HeaderBox, {
   Logo,
   Navigation,
   NavigationButton,
-  Content,
   AccountArea,
   AccountButton,
   FavoriteButton,
   TrashButton
 } from "./HeaderStyles";
 import FavIcon from "../../img/favIcon.png";
+import baseLogo1 from "../../img/SVG/baseLogo1.svg";
+import graffityLogo from "../../img/SVG/graffityLogo.svg";
+import catalog from "../../img/SVG/catalog.svg";
 
 class Header extends Component {
   render() {
     return (
       <HeaderBox>
-        <Link to="/main" style={{ textDecoration: "none" }}>
-          <Logo>QWOS</Logo>
+        <Link to="/main" style={{ textDecoration: "none"}}>
+          <Logo src={graffityLogo}/>
         </Link>
         <Navigation>
           <Link to="/catalog" style={{ textDecoration: "none" }}>
